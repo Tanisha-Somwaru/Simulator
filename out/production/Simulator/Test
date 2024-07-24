@@ -1,0 +1,25 @@
+// Test 1 & Test 2 Assembly
+copy R3 1
+copy R2 501
+copy R1 20
+
+call less R3 R1 1
+halt
+load R2 R5
+math R2 R5
+math R2 R3
+return
+
+// Test 3.
+copy R4 1
+copy R5 230
+copy R6 20
+copy R8 0
+copy R7 math R6 R4
+
+call greaterOrEqual R7 R8 1
+halt
+load R5 R10
+math R5 R10
+math R5 R4
+return
